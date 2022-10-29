@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+:root{
+    --maincolor:#ff206e!important;
+    }
+/* width icon the header */
+    .w-20
+    {
+        width: 15%;
+    } 
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-image: url('../img/light_dot.jpg');
+}
+/* start navbar $ header */
+.navbar-brand{
+    font-weight: 600;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+.navbar-expand-lg .navbar-nav .nav-link{
+    color: #fff;
+    font-size: .875rem;
+}
+.navbar-nav .nav-item a.active {
+    color: var(--maincolor);
+}
+.header{
+        background-image: url(../img/bg.jpg);
+        background-position: center;
+        background-size: cover;
+}
+.title-header{
+    font-size: 3rem;
+    font-weight: 800;
+}
+.h6{
+    font-size: 1rem;
+    font-weight: 400;
+}
+ .header .view{
+    color: var(--maincolor);
+    letter-spacing: 1px;
+ }
+ .header .icon {
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+    right: 1rem;
+ }
+ .header .icon a{
+    color: #fff;
+   ;
+ }
+ .text-effect{
+    opacity: 0;
+    animation-name:first;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    position: relative;
+ }
+ .text-effect::after
+ {
+    content: '';
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 0%;
+    height: 100%;
+    animation: block 1s;
+ }
+ @keyframes block{
+    0%{
+        left: 0;
+        width:0%;
+    }
+    75%{
+        left: 0%;
+        width: 100%;
+    }
+    100%{
+        left: 100%;
+        width: 0%;
+    }
+ }
+ @keyframes first {
+    0%{
+        opacity:0;
+    }
+    100%{
+        opacity:1;
+    }
+
+ }
+ .navbar-toggler span{
+ color: #fff;
+ display: flex;
+ width: 30px;
+ background-color: transparent;
+ border:2px solid #fff;
+ margin:.25rem; 
+ }
+ .navbar-toggler span:nth-child(3){
+    width: 15px;
+    margin: auto;
+ }
+ @media (max-width:991px) {
+    .navbar{
+        background-color: #000;
+       }
+ }
+ /* end navbar $ header */
+ /* star about section */
+
+ .title h2,.title h3{
+    font-weight: 800;
+     text-transform: uppercase;
+
+ }
+ .title h2{
+    color: #cacaca;
+    font-size: 5rem;
+}
+.title h3{
+    color: #000;
+    font-size: 2.5rem;
+}
+.about-info h5{
+    color: var(--maincolor);
+    font-size: 1rem;
+}
+/* end about section */
+/* start services */
+.services{
+   background-image: url('../img/dark_dot.jpg');
+}
+.services-item h4{
+    color: #000;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.services-item p{
+    font-size: 1rem;
+    color: #212529;
+    text-align: center;
+    width: 75%;
+    margin: auto;
+
+}
+.services-item {
+    position: relative;
+}
+.services-item span{
+    background-color:#000;
+    color: #fff;
+    border-radius: 50%;
+    padding: 14px ;
+    position: absolute;
+    left: 50%;
+    transform:translate(-60%,-60%);
+    border: 2px solid #fff;
+
+}
+.services-item i{
+    font-size: 1.5rem;
+}
+.services-item i:hover{
+    color: var(--maincolor);
+    font-size: 1.5rem;
+}
+.portfolio{
+    padding-top: 6rem;
+}
+/* end servises */
+/* star partfolio */
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: var(--maincolor);
+    border: 0;
+    background-color: transparent;
+}
+.nav-tabs .nav-link{
+    background-color: transparent;
+    color: #000;
+    border: 0;
+}
